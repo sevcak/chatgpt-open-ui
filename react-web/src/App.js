@@ -34,10 +34,11 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    onSubmit(apiKey, inputText, setResult).then(() => {
-      setLoading(false);
-    });
+    // setLoading(true);
+    // onSubmit(apiKey, inputText, setResult).then(() => {
+    //   setLoading(false);
+    // });
+    setResult(inputText);
   }
 
   // overrides default css for HashLoader spinner

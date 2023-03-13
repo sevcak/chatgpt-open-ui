@@ -20,7 +20,7 @@ export default function parseMarkdown(markdown) {
         let code = matches?.[2] ?? '';
 
         return (
-            <Codeblock key={index} language={correctLanguage(language)}>
+            <Codeblock key={index} language={correctLanguage(language)} typewriter>
               {code.trim()}
             </Codeblock>
         );
